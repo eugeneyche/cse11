@@ -1,14 +1,62 @@
 ID: A11259419
 NAME: Eugene Che
 LOGIN:cs11eac
-
 Problem 1:
+    total 100
+    -rw-r----- 1 eyche staff   718 Sep 30 14:39 Hello2.class
+    -rw-r----- 1 eyche staff   938 Sep 30 14:34 Hello2.java
+    -rw-r----- 1 eyche staff   427 Sep 30 14:35 HelloWorld.class
+    -rw-r----- 1 eyche staff   475 Sep 30 14:35 HelloWorld.java
+    -rw-r----- 1 eyche staff   610 Sep 30 14:40 HelloWorldGraphics.class
+    -rw-r----- 1 eyche staff   879 Sep 30 14:34 HelloWorldGraphics.java
+    -rw-r----- 1 eyche staff   130 Sep 30 14:36 myapplet.html
+    -rw-r----- 1 eyche staff 67068 Sep 30 14:33 objectdraw.jar
+
 Problem 2:
+    1)
+        System.out.println("Hello, World") // System.out.println("Hello World);
+    Error:
+        HelloWorld.java:16: error: ';' expected
+            System.out.println("Hello, World!")
+                                               ^
+    Meaning:
+        The command is missing a semicolon at the end.
+
+    2)
+        boolean 4invalid = false; // boolean invalid = false;
+    Error:
+        HelloWorld.java:17: error: not a statement
+            boolean 4invalid = false;
+            ^
+        HelloWorld.java:17: error: ';' expected
+            boolean 4invalid = false;    
+    Meaning:
+        The variable does not contain a valid identifier, and therefore the compiler was not able to parse the command.
+
+    3)
+        int i = 4.2; // int i = 4;
+    Error:
+        HelloWorld.java:16: error: possible loss of precision
+            int i = 4.2;
+                    ^
+        required: int
+        found:    double
+    Meaning:
+        Because i is defined as an integer, it cannot be assigned the value, 4.2 which is a floating point number or double.
+    4)
+        int i = 4; int i = 10; // int i = 4; i = 10;
+    Error:
+        HelloWorld.java:17: error: i is already defined in main(String[])
+            int i = 10;
+    Meaning:
+        i is already created, so to declare it again (as an int) is invalid. Instead, one simply assigns it without declaring it again.
+
 Problem 3:
     class signifies the code enclosed will act as a blueprint for an object
     Hangman is the name of the class defined
     extends signifies that the class defined will enherit all the properties of the the class named after the keyword
     WindowController is the class from which Hangman extends off of
+
 Problem 4:
     a) valid
     b) invalid (starts with number)
@@ -20,6 +68,7 @@ Problem 4:
     h) valid
     i) invalid (contains -)
     j) invalid (contains ")
+
 Problem 5:
     a) Color(0,0,0)
     b) Color(255,255,255);
