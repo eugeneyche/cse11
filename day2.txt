@@ -1,0 +1,75 @@
+Date: 09/30/13
+Basic Computer operation is very straightforward
+CPU = Central Processing Unit
+    Processor executes commands i.e. moving bits and other 
+Memory stores information
+The basic CPU "Loop"
+    CPU starts at a point in memory that is hardcoded
+        This is known as the BIOS
+    Program Counter starts at Location 1
+    Loop
+        Reads Instruction at Counter 
+        Executes Instruction at Counter
+        Advances Counter to next Instruction
+    Loop
+Memory that Stores Data
+    Memory is Universal Storage
+    What is stored on Location N is different for every program (probably)
+Abstract of Memory
+    Data is stored in a linear set of memory locations on the computer itself
+    Language let us declare the names and types of variables that we want to use
+    The compiler and runtime systems keeps track of exactly where in memory a variable is located
+        Nothing in the computer itself protects us from storing double in location N and then reading it back as if it were an integer
+    The same idea apply to the "code part of the program
+Programming Languages
+    Convert high-level, human-understandable instructions into a form that the computer can execute
+    Different kinds of language make it easier (or harder) to express these high-level instructions
+What came before before Object-Oriented Programming?
+    Fortram introduced in 1955
+    25 years later, the first popular object-oriented language appeared (C++)
+    The basic abstraction is called procedural programming
+        Mirrors very like the movement in data in the CPU
+    It is the bedrock of computer programming and you use elements of it all the time (even in object oriented programming)
+What is procedural programming?
+    A program is organized as data and as a set of procedures
+    For the program to do its job, the procedures are called in the correct order
+    This very much mirrors how data and code are defined/organized in the computer
+What are some of the complaints of procedural programming
+    Code wasseparated from the actual data
+    Suppose you have 
+        Integer A
+        2x2 Matrix
+    You use one procedure to square an integer A
+    You use different procedure to square matrix B
+    In procedural programming, the author must explicitly track whether he/she is squaring a number or a matrix and the call the right piece of code to get the job done
+Object-Oriented Programming
+    Revisite integer A and Matrix B
+    Suppose A and B knew "how to square themselves"?
+    Each object would call their respective multiplications
+    This is called the squaring method
+Function Call vs Method Invocations
+    B = square(A)
+        The data is the argument for the function
+    B = A.square()
+        A has a method called square
+        Methods are properties of objects
+Object
+    An object is a software construction that has both state and behavior
+        State is data required to define the object
+        Behavior is the method or procedures that can be used to manipulate the state
+    Methods operate on an object's internal state and serve as the primary mechanim for object-to-object communication
+    Hiding internal state and requiring all interactions to be performed through an object's methods is known as data encapsulation - a fundamental principle of object-oriented programming
+    State is memory of the computer
+    Methods are procedures
+    We logically link these two together to create an object
+    Shorthand: Object = Data + Methods
+Classes
+    A class is a blueprint from which individual objects are created
+    Suppose we have a bicyle class
+        The internal state that might be used to define a particular bike in the bicycle class are
+            Color, wheel size, seat height, number of gears
+        Methods are used to control the bike
+            pedal, brake, selectGear, turnRight, turnLeft, goStraight
+Instances
+    An instance of a class is specific object with state
+

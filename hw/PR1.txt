@@ -1,0 +1,28 @@
+ID: A11259419
+NAME: Eugene Che
+LOGIN:cs11eac
+
+Problem 1:
+Problem 2:
+Problem 3:
+    class signifies the code enclosed will act as a blueprint for an object
+    Hangman is the name of the class defined
+    extends signifies that the class defined will enherit all the properties of the the class named after the keyword
+    WindowController is the class from which Hangman extends off of
+Problem 4:
+    a) valid
+    b) invalid (starts with number)
+    c) valid
+    d) valid
+    e) valid
+    f) invalid (contains ')
+    g) valid
+    h) valid
+    i) invalid (contains -)
+    j) invalid (contains ")
+Problem 5:
+    a) Color(0,0,0)
+    b) Color(255,255,255);
+    c) Color(128,0,128);
+    d) Color(255,255,0);
+    e) Color(0,0,128);

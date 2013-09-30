@@ -1,0 +1,49 @@
+Date: 09/27/13
+CSE11 Fall 2013 Lecture 1
+
+Topics Covered
+    A short History of programming languages
+    Computer organization
+    What is a procedural language
+    What is an object-oriented language
+    What is an object, class, instance
+
+Short History of Programming
+    1943: The ENIAC at UPenn
+        Used to calculate Artillery Projectile Calculations 19,000 Vacuum Tube
+        Programmed in Assembly i.e. Machine Code
+    Assembly
+        Comtrols the movement of bits
+        i.e.
+            pushl %edp
+            movl %esp, ebp
+            subl $4, %esp
+            movl $10, -4(%ebp)
+            leal -4(%ebp), %eax
+            addl %66, (%eax)
+            leave
+            ret
+        Not readable without comments
+        Specific to brand particular hardware
+        Prone to errors. Slow to program. Essentially not used today
+    1955:FORTRAN (Formula Translation) Higher level compiled to lower level
+    1958:LISP (List Processing)
+    1959:COBOL (Common Business Oriented Language
+    1964:BASIC (Beginner's All Purpose Symbolic Instruction Code)
+        These were critical to programmability of computers
+            English-like constructions
+            Compilers changed that to lower level computer language
+    1970:PASCAL
+        UCSD made Pascal Protable
+    1972:C
+        This made the UNIX operating system practical
+        Most of Linux kernel is in C
+    1978:SQL
+        Program databases
+    1980:C++
+        C with clases
+    1991:Python
+    1995:Java
+        Rapid Applications Development
+        Object Oriented
+        Loosely based on C
