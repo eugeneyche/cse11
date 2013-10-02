@@ -12,8 +12,10 @@ Problem 1:
     -rw-r----- 1 eyche staff   130 Sep 30 14:36 myapplet.html
     -rw-r----- 1 eyche staff 67068 Sep 30 14:33 objectdraw.jar
 
+    The difference between an applet and an application is that an applet is made to run on a browser. This also means that it does not have access to certain things on the computer without proper permissions given, creating a sandbox environment. Additionally, it does not contain a main method, or entry point. Instead the applet viewer will implement the main method and start the program. An application simply runs on the JVM and defines the main method or entry point.
+
 Problem 2:
-    1)
+----1)
         System.out.println("Hello, World") // System.out.println("Hello World);
     Error:
         HelloWorld.java:16: error: ';' expected
@@ -22,7 +24,7 @@ Problem 2:
     Meaning:
         The command is missing a semicolon at the end.
 
-    2)
+----2)
         boolean 4invalid = false; // boolean invalid = false;
     Error:
         HelloWorld.java:17: error: not a statement
@@ -33,7 +35,7 @@ Problem 2:
     Meaning:
         The variable does not contain a valid identifier, and therefore the compiler was not able to parse the command.
 
-    3)
+----3)
         int i = 4.2; // int i = 4;
     Error:
         HelloWorld.java:16: error: possible loss of precision
@@ -43,7 +45,7 @@ Problem 2:
         found:    double
     Meaning:
         Because i is defined as an integer, it cannot be assigned the value, 4.2 which is a floating point number or double.
-    4)
+----4)
         int i = 4; int i = 10; // int i = 4; i = 10;
     Error:
         HelloWorld.java:17: error: i is already defined in main(String[])

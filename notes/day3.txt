@@ -1,0 +1,10 @@
+Date: 10/02/13
+
+Difference between Java Applications and Java Applets
+    Applet
+        Designed to run in web browser
+        Have  no access to local file systems (security issue)
+    To run...
+        Use appletviewer
+        Convert to a java application
+
