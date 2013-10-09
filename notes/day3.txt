@@ -7,4 +7,30 @@ Difference between Java Applications and Java Applets
     To run...
         Use appletviewer
         Convert to a java application
-
+Different Parts of Hello 2
+    import - allows use of classes written elsewhere
+    class - a type definition. An object template.
+        - Instance variables, constructors, methods
+    extends - builds upon an already defined class
+    Methods - sequences of statements to do something (code)
+        - OnMousePress(), onMouseRelease(), ...
+        - Event handling routines respond to specific input (on applet or application)
+    canvas -grpahical sketch paper
+    ; - ends a java statement
+    new Text ("Hello, World", 40, 50, canvas);
+        new creates a new instance of a class (Text, in this case)
+Java Names
+    Valid identifiers
+    Series of letters, number, underscores, $
+    An identifer cannot start with a number
+    An identifer cannot have other special characters
+    $ is valid, but in general, we do not use it because it is reserved for automatically generate java code.
+    Class/Interface - Upper Camel Case
+    Method - Lower Camel Case
+    Instance and class variables - Lower Camel Case
+    Local variables/parameters. Lower case letters, short words.
+    Constants - All caps with underscores
+Comments
+    Comments are essential. They describe in English what a class is supposed to do or how a particular algorithm works
+What is an instance
+    It is a particular object that has been properly initized from a class template.

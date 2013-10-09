@@ -1,0 +1,23 @@
+Date: 10/04/13
+
+What is an instance?
+    It is a particular object that has been properly initialized from a class template.
+Instance Variables
+    State variables
+    Can be public or private
+        public means the variable is visible outside of the class
+        private means the variable is only visible within the class
+    Good programming style is to have accessor methods to get a copy of an instance's private variable
+Parameters and Formal Parameter
+    Formal parameter is the place holder for the value of the actual parameter.
+How a parameters sent to Methods
+    Primitive types:
+        Integer, double, boolean are sent by value i.e. they are copied into the parameter
+    All others - send by reference
+        The address of the object is passed and copied over, and therefore the actual object itself is passed.
+Working are two number types in Java
+    Int - Integers (-1, 0, 10, 1024)
+    Double - floating point numbers (-1.0, 0.0, 10.0, 1024.0, ...)
+    They cannot be used interchange-ably
+        You can convert an int to a double
+        You can explicitly force a conversion of a double to an int
